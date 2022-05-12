@@ -67,30 +67,62 @@ body{
     margin: auto;
     width: 20%;
     margin-top: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     padding: 10px 0;
     font-size: 25px;
     font-family: Lato-Regular;
+    height: 300px;
+    
     
 }
 
 .myWeatherResult2{
-    width: 50%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
-    padding: 20px 15px;
+    padding: 20px;
+    position: relative;
     
 }
 
+i{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
 
 
 #temperature{
     padding: 10px 0;
+}
+
+@media(max-width: 1700px){
+    .myWeatherResult{
+        width: 40%;
+    }
+}
+
+@media(max-width: 1000px){
+    .myWeatherResult{
+        width: 60%;
+    }
+    .myWeatherResult{
+        height: 200px;
+    }
+}
+
+@media(max-width: 600px){
+    .myWeatherResult{
+        width: 100%;
+    }
+    .myWeatherResult{
+        height: 200px;
+    }
 }
 
 @media(max-width: 700px){
