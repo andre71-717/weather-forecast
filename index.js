@@ -6,7 +6,6 @@ myButton.addEventListener('click', function(){
     let createDiv = document.createElement('div');
     createDiv.classList.add("myWeatherResult")
     myWeatherResult2.appendChild(createDiv)
-    createDiv.appendChild(xIcon)
     createDiv.animate(
       { transform: 'translateY(0)'}, 
       {
@@ -15,7 +14,10 @@ myButton.addEventListener('click', function(){
       })
       createDiv.style.margin = "15px"
       createDiv.style.flexBasis = "20%"
-
+      
+      for(let i = 0; i < createDiv.length; i++){
+        createDiv[i].appendChild(xIcon)
+      }
 
 })
 
