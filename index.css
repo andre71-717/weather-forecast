@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/2367875.webp);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(./fonts/Lato-Regular.ttf);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.container h1{
+    color: rgb(239, 188, 3);
+    text-align: center;
+    margin: 15px 0;
+    font-size: 80px;
+    font-family: Lato-Regular;
+    
+}
+
+.contInners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contInners input{
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 35px;
+    margin: 25px 0;
+    color: white;
+    font-family: Lato-Regular;
+    outline: none;
+}
+
+.container button{
+    font-size: 30px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: rgb(239, 188, 3);
+    padding: 20px;
+    cursor: pointer;
+    font-family: Lato-Regular;
+
+}
+
+.container button:hover{
+    background-color: rgb(225, 149, 9);
+
+}
+
+.myWeatherResult{
+    transform: translateY(-40%);
+    background-color: rgb(239, 188, 3);
+    margin: auto;
+    width: 20%;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px;
+    font-family: Lato-Regular;
+    
+}
+
+.myWeatherResult2{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px 15px;
+    
+}
+
+
+
+#temperature{
+    padding: 10px 0;
+}
+
+@media(max-width: 700px){
+
+    .container h1{
+        font-size: 50px;
+    }
+    .contInners input{
+        font-size: 20px;
+    }
+    .contInners button{
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .myWeatherResult{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 440px){
+
+    .container h1{
+        font-size: 30px;
+    }
+    .contInners input{
+        font-size: 10px;
+    }
+    .contInners button{
+        font-size: 10px;
+        padding: 5px;
+
+    }
+
+    .myWeatherResult{
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+}
