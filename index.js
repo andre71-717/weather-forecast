@@ -11,6 +11,7 @@ myButton.addEventListener('click', function(){
         duration: 500,
         fill: 'forwards'
       })
+      createDiv.style.margin = "15px"
 
 })
 
