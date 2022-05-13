@@ -18,11 +18,12 @@ myButton.addEventListener('click', function(){
       createDiv.style.margin = "15px"
       createDiv.style.flexBasis = "20%"
       
-      // for(let i = 0; i < createDiv.length; i++){
-       
-      // }
+      xIcon.addEventListener('click', function(){
+        createDiv.remove()
+      })
 
 })
+
 
 
 
